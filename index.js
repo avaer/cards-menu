@@ -87,7 +87,7 @@ const _makeCardMesh = img => {
   
   return mesh;
 };
-const _makeInventoryMesh = () => {
+export default () => {
   const w = menuWidth + menuRadius*2;
   const h = menuHeight + menuRadius*2;
   const geometry = createBoxWithRoundedEdges(w, h, menuRadius, 0.99);
@@ -252,8 +252,4 @@ const _makeInventoryMesh = () => {
   });
   
   return mesh;
-};
-
-export default () => {
-  
 };
