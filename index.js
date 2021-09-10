@@ -1,8 +1,10 @@
 import * as THREE from 'three';
+import easing from './easing.js';
 import metaversefile from 'metaversefile';
 const {useApp, useFrame, useInternals} = metaversefile;
 
 const cardPreviewHost = `https://card-preview.exokit.org`;
+const cubicBezier = easing(0, 1, 0, 1);
 
 const cardWidth = 0.063;
 const cardHeight = cardWidth / 2.5 * 3.5;
