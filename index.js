@@ -52,7 +52,7 @@ const _makeCardBackMaterial = () => {
     transparent: true,
   });
   (async () => {
-    const img = await _loadImage('./assets/cardback.png');
+    const img = await _loadImage(`${import.meta.url.replace(/(\/)[^\/]*$/, '$1')}cardback.png`);
     material.map.image = img;
     material.map.minFilter = THREE.LinearMipmapLinearFilter;
     material.map.magFilter = THREE.LinearFilter;
